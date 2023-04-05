@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+/* font-family: 'Bai Jamjuree', sans-serif; */
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+/* ### Primary */
+--Strong_Cyan: hsl(171, 66%, 44%);
+--Light_Blue: hsl(233, 100%, 69%);
+
+/* ### Neutral */
+--Dark_Grayish_Blue: hsl(210, 10%, 33%);
+--Grayish_Blue: hsl(201, 11%, 66%);
+
+/* changing 1rem = 10px */
+font-size: 62.5%;
+
+/* scroll */
+scroll-behavior: smooth;
+min-height: 100vh;
+}
+/* ########################### */
+/*### utility classes */
+
+.container{
+    max-width: 65rem;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.lg-heading{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--Dark_Grayish_Blue);
+    margin-bottom: 1rem;
+}
+.md-heading{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--Dark_Grayish_Blue);
+    margin-bottom: 1rem;
+}
+p{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--Grayish_Blue);
+    margin-bottom: 4rem;
+}
+
+a{
+    text-decoration: none;
+}
+ul>li{
+    list-style: none;
+}
+/* ########################## */
+/* ### buttons styling */
+
+.download_buttons{
+    display: flex;
+    justify-content: center;
+    row-gap: 2rem;
+}
+.btn{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0 .5em;
+    padding: .5em 1.5em;
+    border-radius: 2.5rem;
+    color: #fefefe;
+    padding-top: 1rem;
+    transition: all .5s;
+    transition-delay: .1s;
+}
+.btn:active{
+    transform: translateY(2px);
+}
+.btn-ios{
+    background: var(--Strong_Cyan);
+    box-shadow: 0px 3px 0px 0px hsl(171, 66%, 35%);
+}
+.btn-ios:hover{
+    cursor: pointer;
+    background:hsl(171, 63%, 54%) ;
+}
+.btn-mac{
+    background: var(--Light_Blue);
+    box-shadow: 0px 3px 0px 0px  hsl(233, 100%, 62%);
+}
+.btn-mac:hover{
+    cursor: pointer;
+    background: hsl(233, 100%, 75%);
+}
+/* ########################## */
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    line-height: 1.5;
+    height: 100vh;
+}
+
+/* ### header styling */
+header{
+    min-height: 90vh;
+    background: url('./images/bg-header-desktop.png') no-repeat;
+}
+
+.header .header-content{
+    padding-top: 4rem;
+}
+
+.header .logo{
+    margin: 4rem auto;
+}
+
+.header .main_heading{
+    font-size: 4rem;
+    color: var(--Dark_Grayish_Blue);   
+    margin-bottom: 1rem;
+}
+/* ########################## */
+
+/*### desktop section styling */
+section.desktop{
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0 8rem 0;
+}
+.desktop_img{
+    width: 50%;
+    margin-bottom: 4rem;
+}
+.desktop_img img{
+    max-width: 100%;
+    transform: translateX(-4rem);
+}
+.desktop_content{
+    width: 45%;
+    padding:2.5% 12.5% 5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+/* ######################## */
+
+/*### access section styling*/
+section.access{
+    margin: 6rem auto;
+}
+/* devices image */
+.devices{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.devices img{
+    max-width: 70%;
+}
+/* ######   ################## */
+/* ### tools section */
+section.tools{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 4rem auto;
+    width: 80%;
+}
+
+.tool-item{
+    width: 32%;
+}
+.tool_icon{
+    height: 4rem;
+    aspect-ratio: auto;
+    margin-bottom: 2rem;
+}
+
+/* ######################## */
+/* ### socials section */
+section.socials{
+    width: 80%;
+    height: auto;
+    margin: 12rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 3rem;
+    column-gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ######################## */
+/* ### clipboard section */
+section.clipboard{
+    margin: 16rem auto;
+}
+/* ######################## */
+/* ### footer styling */
+.footer{
+    background: #f4f4f4;
+    width: 100%;
+    min-height: 15rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*footer logo styling */
+.footer-logo{
+    width: 20%;
+    display: grid;
+    place-items: center;
+}
+.footer-logo img{
+    width: 35%;
+}
+
+/* footer links styling  */
+.footer-links{
+    width: 50%;
+}
+.footer-links ul{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+    grid-gap: 2rem 4rem;
+    align-content: center;
+}
+.footer-links li a{
+    font-size: 1.8rem;
+    color: var(--Dark_Grayish_Blue);
+    transition: border .5s;
+}
+
+.footer-links li a:hover{
+    border-bottom: 1px solid var(--Dark_Grayish_Blue);
+}
+
+/* footer social icons styling */
+.social-icons{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-icons>*{
+    margin: 0 1rem;
+    transition: transform .5s;
+}
+
+.social-icons>*:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}    

@@ -1,0 +1,82 @@
+@media screen and (max-width:900px) {
+    :root{
+        font-size: 50%;
+    }
+    .header{
+        min-height: 70vh;
+    }
+}
+
+@media screen and (max-width:768px) {
+    /*Desktop section styling  */
+    section.desktop{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .desktop_img{
+        width: 100%;
+    }
+    .desktop_img img{
+        max-width: 80%;
+        transform: translateX(0);
+    }
+    .desktop_content{
+        padding: 0;
+    }
+    /* Devices section styling */
+    .devices img{
+        max-width: 100%;
+    }
+    /* tools section */
+    section.tools{
+        flex-direction: column;
+        align-items: center;
+    }
+    .tool-item{
+        width: 60%;
+    }
+    /* socials section */
+    section.socials{
+        height: 60vh;
+        max-width: 25%;
+        flex-direction: column;
+    }
+    .socials img{
+        width: 100%;
+        min-width: 120px;
+        aspect-ratio: auto;
+    }
+    /* footer styling */
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem 0;
+    }
+    .footer-links{
+        margin: 2rem auto;
+    }
+    .footer-links ul{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    /* buttons styling */
+    .download_buttons{
+        flex-direction: column;
+    }        
+    .download_buttons .btn{
+        width: 90%;
+        margin: 0 auto;
+        padding: 1em 1.5em;
+        border-radius: 5rem;
+    }
+    .footer{
+        width: 100vw;
+    }
+}
+
+
