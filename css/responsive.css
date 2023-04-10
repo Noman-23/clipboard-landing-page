@@ -64,6 +64,14 @@
 
 @media screen and (max-width:400px) {
 
+    /* header background for mobile version */
+    .header{
+        background: url('../images/bg-header-mobile.png');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     /* buttons styling */
     .download_buttons{
         flex-direction: column;
